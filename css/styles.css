@@ -1,43 +1,93 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    box-sizing: border-box;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007BFF; /* Blue background */
+    color: #fff; /* White text */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.container {
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.sidebar {
+    width: 250px;
+    background-color: #001F3F; /* Navy blue */
+    padding: 20px;
 }
 
-nav ul li a {
-    color: white;
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
     text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
-section {
-    padding: 2rem;
-    background: white;
-    margin: 1rem auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.sidebar ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: #fff;
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%; /* Circular profile picture */
+    margin-right: 20px;
+}
+
+.profile p {
+    flex: 1;
+}
+
+.summary {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #FFD700; /* Gold color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #001F3F; /* Navy text */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFC107; /* Darker gold on hover */
 }
