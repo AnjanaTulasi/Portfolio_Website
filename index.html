@@ -3,64 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjana Tulasi - Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header>
-        <h1>Your Name</h1>
-        <nav>
+    <div class="container">
+        <nav class="sidebar">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li> 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>As a dedicated DevOps and Middleware Engineer with three years of experience, I specialize in optimizing deployment strategies and automating workflows to deliver exceptional performance for enterprise applications. My expertise encompasses WebLogic twelve c, Oracle DB, Docker, Jenkins, Splunk, and AppDynamics, along with a proven track record in crafting efficient CI/CD pipelines and conducting in-depth network porting, SOA, OSB, and AIA analyses. Currently pursuing a master's in Computer Science, I am passionate about expanding my skill set in cloud automation, Kubernetes, and Terraform, with the goal of driving transformative solutions within the DevOps space. I welcome opportunities to connect and collaborate on innovative projects that leverage cutting-edge technologies.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Short description of the project.</p>
-            <a href="#">View Project</a>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Anjana. All rights reserved.</p>
-    </footer>
-
-    <script src="js/scripts.js"></script>
-
+        <main class="content">
+            <section class="intro">
+                <h1>Hello, I am Anjana Tulasi</h1>
+                <p>I'm a middleware engineer.</p>
+            </section>
+            <section class="profile">
+                <img src="your-photo.jpg" alt="Anjana Tulasi" class="profile-pic">
+                <p>A brief summary about yourself goes here. This section takes up three-fourths of the section.</p>
+                <button onclick="viewResume()">View Resume</button>
+            </section>
+            <section class="summary">
+                <p>I'm a middleware engineer with experience in Oracle Fusion Middleware, WebLogic, and DevOps.</p>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
