@@ -1,4 +1,4 @@
-document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Thank you for your message!');
+// script.js
+document.querySelector('.resume-button').addEventListener('click', function() {
+    window.open('your-resume.pdf', '_blank'); // Change to your resume link
 });
